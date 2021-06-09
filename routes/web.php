@@ -14,6 +14,7 @@ Route::post('/pizzas', 'App\Http\Controllers\PizzaController@store');
 Route::get('/pizzas/{id}', 'App\Http\Controllers\PizzaController@show')->middleware('auth');
 Route::delete('pizzas/{id}', 'App\Http\Controllers\PizzaController@destroy')->middleware('auth');
 
+//auth
 Auth::routes([
     'register' => false
 ]);
